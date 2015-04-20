@@ -1,0 +1,45 @@
+		
+<ion-view view-title="'login'" hide-nav-bar="true"> 
+
+<ion-content class="padding" scroll="false">
+	
+<div class="login-form">
+		<div class="list card">
+
+			<div class="bar bar-header bar-light">
+				<h1 class="title">
+					<center>login</center>
+				</h1>
+			</div>
+			<br>
+			<div class="item item-body">
+
+				<div class="list list-inset">
+					<label class="item item-input"> <input type="email"
+						placeholder="Email" ng-model="user.email">
+					</label> <label class="item item-input"> <input type="password"
+						placeholder="Password" ng-model="user.password">
+					</label>
+				</div>
+
+				<div class="button-bar">
+					<a class="button button-calm"  ng-click="validateUser()">Login</a> <a class="button button-calm"  ng-click="guestLogin()">Guest Login</a>
+				</div>
+				
+
+			</div>
+
+			<div class="item tabs tabs-secondary tabs-icon-left">
+				<a class="tab-item" href="#"> <i class="ion-social-facebook"></i>
+					Facebook
+				</a> <a class="tab-item" href="#/register"> <i class="ion-ios-plus-outline"></i>
+					Sign up
+				</a> <a class="tab-item" href="#/forgot-password"> <i
+					class="ion-information-circled"></i> Forgot
+				</a>
+			</div>
+
+		</div>
+        </div>
+     </ion-content>
+    </ion-view>
